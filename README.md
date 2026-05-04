@@ -8,6 +8,7 @@ Ce répo regourpe la copie fonctions des fonctions :
 - **strcmp**
 - **strchr**
 - **strpbrk** 
+- **xstrstr**
 
 Par convention nous commencerons le nom de nos fonctions par `x`, dans notre cas pour indiquer que ce sont des copies !
 
