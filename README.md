@@ -24,6 +24,7 @@ Fonctions | Rôles  |
 `xstrcmp` | Compare la taille et les éléments de deux chaines de caractère s'il y correspondance au niveaux des deux points, renvoie 1 sinon 0 . 
 `xstrchr` | Vérifie l'existence d'un caractère dans une chaine de caractère si le caractère existe renvoie l'adresse de la première occurence du caractère dans la chaine sinon, renvoie un pointeur nul.
 `xstrpbrk`| recherche la présence d’un des caractères de la chaîne_2 dans la chaîne_1. Si un de ceux-ci est rencontré, la fonction retourne l’adresse de la première occurrence au sein de la chaîne_1. Dans le cas contraire, la fonction renvoie un pointeur nul.
+`xstrstr` | recherche la présence de la chaine de caractères de la chaîne_2 dans la chaîne_1. Si elle existe, la fonction retourne l’adresse de sa première lettre au sein de la chaîne_1. Dans le cas contraire, la fonction renvoie un pointeur nul.
 ---
 
 
@@ -80,6 +81,15 @@ output :
 ```
 char chaine[] = "Bonjour";
 printf("%p\n", xstrpbrk(chaine, "Bonsoir"));
+
+output :
+0xadresse
+```
+
+**xstrstr** :
+```
+char chaine[] = "Bonjour";
+printf("%p\n", xstrstr(chaine, "jour"));
 
 output :
 0xadresse
